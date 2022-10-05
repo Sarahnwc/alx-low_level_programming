@@ -8,16 +8,16 @@
  * Return: the args one line at a time
  */
 
- char *argstostr(int ac, char **av)
- {
+char *argstostr(int ac, char **av)
+{
 	 char *str;
 	 int count = 0, a = 0, b = 0, c = 0;
 
-	 if (ac == 0 || av == NULL)
-	 		 return (NULL);
-	 while (a < ac)
-	 {
-	 	b = 0;
+	if (ac == 0 || av == NULL)
+		return (NULL);
+	while (a < ac)
+	{
+		b = 0;
 		while (av[a][b] != '\0')
 		{
 			count++;
